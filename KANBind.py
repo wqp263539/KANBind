@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 
-from kan import KAN
+from efficient-kan import KAN
 
 
 class SEFusion(nn.Module):
