@@ -71,7 +71,7 @@ class MultiBranchFusionModel(nn.Module):
         # SE 融合（把三路表示做 gating 再求和）
         self.fusion = SEFusion(num_channels=3)
 
-        # KAN 分类头（保持你原始设置）
+        # KAN 分类头
         self.classifier = KAN(
             layers_hidden=[hidden_dim, 128, 1],
             grid_size=kan_grid_size,
